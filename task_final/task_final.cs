@@ -13,3 +13,18 @@ for (int i = 0; i < n; i++)
         count++;
     }
 }
+
+
+Console.WriteLine();
+Console.WriteLine("Новый массив состоит из " + count + " элементов:");
+
+string[] str2 = new string[count];
+int j = 0;
+for (int i = 0; i < n; i++)
+{
+    if (str1[i].Length <= 3)
+    {
+        str2[j] = str1[i];
+        j++;
+    }
+}
