@@ -14,7 +14,6 @@ for (int i = 0; i < n; i++)
     }
 }
 
-
 Console.WriteLine();
 Console.WriteLine("Новый массив состоит из " + count + " элементов:");
 
@@ -28,3 +27,32 @@ for (int i = 0; i < n; i++)
         j++;
     }
 }
+
+Console.WriteLine();
+Console.Write("[");
+for (int i = 0; i < n; i++)
+{
+    if (i == n - 1)
+    {
+        Console.Write("\"" + str1[i] + "\"");
+    }
+    else
+    {
+        Console.Write("\"" + str1[i] + "\"" + ", ");
+    }
+}
+    Console.Write("] -> [");
+
+for (int i = 0; i < count; i++)
+{
+    if (i == count - 1)
+    {
+        Console.Write("\"" + str2[i] + "\"");
+    }
+    else
+    {
+        Console.Write("\"" + str2[i] + "\"" + ", ");
+    }
+}
+    Console.Write("]");
+    
